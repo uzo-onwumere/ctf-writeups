@@ -32,7 +32,7 @@ Time in Box: 5 minutes
 
 ### Enumeration
 nmap -sV -sC -O 10.129.20.9
-Starting Nmap 7.98 ( https://nmap.org ) at 2026-04-05 22:08 -0500
+
 Nmap scan report for 10.129.20.9
 Host is up (0.058s latency).
 Not shown: 999 closed tcp ports (reset)
