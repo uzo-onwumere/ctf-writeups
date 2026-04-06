@@ -34,12 +34,15 @@ Time in Box: 5 minutes
 nmap -sV -sC -O 10.129.20.9
 
 Nmap scan report for 10.129.20.9
+
 Host is up (0.058s latency).
+
 Not shown: 999 closed tcp ports (reset)
 PORT   STATE SERVICE VERSION
 23/tcp open  telnet  Linux telnetd
 Device type: general purpose
 Running: Linux 4.X|5.X
+
 OS CPE: cpe:/o:linux:linux_kernel:4 cpe:/o:linux:linux_kernel:5
 OS details: Linux 4.15 - 5.19
 Network Distance: 2 hops
@@ -51,18 +54,17 @@ Trying 10.129.20.9...
 Connected to 10.129.20.9.
 Escape character is '^]'.
 
-  █  █         ▐▌     ▄█▄ █          ▄▄▄▄
-  █▄▄█ ▀▀█ █▀▀ ▐▌▄▀    █  █▀█ █▀█    █▌▄█ ▄▀▀▄ ▀▄▀
-  █  █ █▄█ █▄▄ ▐█▀▄    █  █ █ █▄▄    █▌▄█ ▀▄▄▀ █▀█
-
 
 Meow login: root
 (root was  the answer to the previous question in  the lab) 
 
 ### Flag
 root@Meow:~# ls
+
 flag.txt  snap
+
 root@Meow:~# cat flag.txt
+
 b40abdfe23665f766f9c61ecba8a4c19
 
 /home/kali/Pictures/meow flag.png
