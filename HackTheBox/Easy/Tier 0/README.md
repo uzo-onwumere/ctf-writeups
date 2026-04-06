@@ -236,14 +236,14 @@ smb: \> ls
   Amy.J                               D        0  Mon Mar 29 04:08:24 2021
   James.P                             D        0  Thu Jun  3 03:38:03 2021
 
-                5114111 blocks of size 4096. 1733545 blocks available
+                
 smb: \> cd Amy.J
 smb: \Amy.J\> ls
   .                                   D        0  Mon Mar 29 04:08:24 2021
   ..                                  D        0  Mon Mar 29 04:08:24 2021
   worknotes.txt                       A       94  Fri Mar 26 06:00:37 2021
 
-                5114111 blocks of size 4096. 1733625 blocks available
+               
 smb: \Amy.J\> get worknotes.txt
 getting file \Amy.J\worknotes.txt of size 94 as worknotes.txt (0.5 KiloBytes/sec) (average 0.5 KiloBytes/sec)
 smb: \Amy.J\> cd ../
@@ -253,14 +253,14 @@ smb: \> ls
   Amy.J                               D        0  Mon Mar 29 04:08:24 2021
   James.P                             D        0  Thu Jun  3 03:38:03 2021
 
-                5114111 blocks of size 4096. 1733609 blocks available
+
 smb: \> cd James.P
 smb: \James.P\> ls
   .                                   D        0  Thu Jun  3 03:38:03 2021
   ..                                  D        0  Thu Jun  3 03:38:03 2021
   flag.txt                            A       32  Mon Mar 29 04:26:57 2021
 
-                5114111 blocks of size 4096. 1733609 blocks available
+
 smb: \James.P\> get flag.txt
 getting file \James.P\flag.txt of size 32 as flag.txt (0.2 KiloBytes/sec) (average 0.4 KiloBytes/sec)
 
