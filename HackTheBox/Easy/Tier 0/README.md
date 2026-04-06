@@ -181,32 +181,18 @@ Time in Box: 8 minutes
 
 ### Enumeration
 nmap -sV -sC -O 10.129.1.12
-Starting Nmap 7.98 ( https://nmap.org ) at 2026-04-05 22:29 -0500
+
 Nmap scan report for 10.129.1.12
 Host is up (0.055s latency).
-Not shown: 996 closed tcp ports (reset)
+
 PORT     STATE SERVICE       VERSION
 135/tcp  open  msrpc         Microsoft Windows RPC
 139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
 445/tcp  open  microsoft-ds?
 5985/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+
 |_http-title: Not Found
 |_http-server-header: Microsoft-HTTPAPI/2.0
-No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
-TCP/IP fingerprint:
-OS:SCAN(V=7.98%E=4%D=4/5%OT=135%CT=1%CU=38647%PV=Y%DS=2%DC=I%G=Y%TM=69D328B
-OS:F%P=x86_64-pc-linux-gnu)SEQ(SP=101%GCD=1%ISR=106%TI=I%CI=I%II=I%SS=S%TS=
-OS:U)SEQ(SP=104%GCD=1%ISR=10C%TI=I%CI=I%II=I%SS=S%TS=U)SEQ(SP=105%GCD=1%ISR
-OS:=107%TI=I%CI=I%II=I%SS=S%TS=U)SEQ(SP=107%GCD=1%ISR=108%TI=I%CI=I%II=I%SS
-OS:=S%TS=U)OPS(O1=M542NW8NNS%O2=M542NW8NNS%O3=M542NW8%O4=M542NW8NNS%O5=M542
-OS:NW8NNS%O6=M542NNS)WIN(W1=FFFF%W2=FFFF%W3=FFFF%W4=FFFF%W5=FFFF%W6=FF70)EC
-OS:N(R=Y%DF=Y%T=80%W=FFFF%O=M542NW8NNS%CC=Y%Q=)T1(R=Y%DF=Y%T=80%S=O%A=S+%F=
-OS:AS%RD=0%Q=)T2(R=Y%DF=Y%T=80%W=0%S=Z%A=S%F=AR%O=%RD=0%Q=)T3(R=Y%DF=Y%T=80
-OS:%W=0%S=Z%A=O%F=AR%O=%RD=0%Q=)T4(R=Y%DF=Y%T=80%W=0%S=A%A=O%F=R%O=%RD=0%Q=
-OS:)T5(R=Y%DF=Y%T=80%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=80%W=0%S=A%
-OS:A=O%F=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=80%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%
-OS:DF=N%T=80%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=
-OS:80%CD=Z)
 
 Network Distance: 2 hops
 Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
@@ -214,9 +200,11 @@ Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
 Host script results:
 |_clock-skew: 3h59m57s
 | smb2-time: 
+
 |   date: 2026-04-06T07:30:02
 |_  start_date: N/A
 | smb2-security-mode: 
+
 |   3.1.1: 
 |_    Message signing enabled but not required
 
@@ -236,8 +224,10 @@ do_connect: Connection to 10.129.1.12 failed (Error NT_STATUS_RESOURCE_NAME_NOT_
 Unable to connect with SMB1 -- no workgroup available
 
 (the -L flag was one of the answers to a previous question in the lab and root was  the password entered to gain initial access)
+
 smbclient //10.129.1.12/WorkShares
 Password for [WORKGROUP\kali]:
+
 Try "help" to get a list of possible commands.
 smb: \> 
 smb: \> ls
@@ -273,12 +263,12 @@ smb: \James.P\> ls
                 5114111 blocks of size 4096. 1733609 blocks available
 smb: \James.P\> get flag.txt
 getting file \James.P\flag.txt of size 32 as flag.txt (0.2 KiloBytes/sec) (average 0.4 KiloBytes/sec)
-smb: \James.P\> bye
-bye: command not found
+
 smb: \James.P\> exit
 
 
 ### Flag
+
 cat flag.txt
 5f61c10dffbc77a704d76016a22f1664
 
