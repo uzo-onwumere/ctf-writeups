@@ -269,7 +269,7 @@ on any open port 445.
 
 ---
 
-## Redeemer
+## Redeemer [COMING SOON]
 
 **Service:** Redis (Port 6379)
 **Concept:** Unauthenticated database access
@@ -290,7 +290,7 @@ database ports during enumeration.
 
 ---
 
-## Explosion
+## Explosion [COMING SOON]
 
 **Service:** RDP (Port 3389)
 **Concept:** Default credentials
