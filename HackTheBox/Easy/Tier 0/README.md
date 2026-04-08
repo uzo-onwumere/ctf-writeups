@@ -319,7 +319,7 @@ database ports during enumeration.
 
 ---
 
-## Explosion [COMING SOON]
+## Explosion
 
 **Service:** RDP (Port 3389)
 **Concept:** Default credentials
