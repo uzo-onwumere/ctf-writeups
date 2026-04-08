@@ -330,11 +330,11 @@ nmap -sC -sV 10.129.21.150
 Nmap scan report for 10.129.21.150
 
 
-PORT     STATE SERVICE       VERSION
-135/tcp  open  msrpc         Microsoft Windows RPC
-139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+PORT     STATE SERVICE          VERSION
+135/tcp  open  msrpc             Microsoft Windows RPC
+139/tcp  open  netbios-ssn       Microsoft Windows netbios-ssn
 445/tcp  open  microsoft-ds?
-3389/tcp open  ms-wbt-server Microsoft Terminal Services
+3389/tcp open  ms-wbt-server      Microsoft Terminal Services
 
 
 ### Exploitation
