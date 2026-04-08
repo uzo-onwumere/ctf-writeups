@@ -294,7 +294,9 @@ Nmap scan report for 10.129.21.145
 
 Host is up (0.018s latency).
 Not shown: 8999 closed tcp ports (reset)
+
 PORT     STATE SERVICE VERSION
+
 6379/tcp open  redis   Redis key-value store 5.0.7
 
 
