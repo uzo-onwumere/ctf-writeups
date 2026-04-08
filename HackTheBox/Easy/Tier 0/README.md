@@ -65,7 +65,7 @@ flag.txt  snap
 
 root@Meow:~# cat flag.txt
 
-b40abdfe23665f766f9c61ecba8a4c19
+[b40abdfe23665f766f9c61ecba8a4c19]
 
 
 ### Key Takeaway
@@ -162,7 +162,7 @@ ftp> bye
 ### Flag
 
 cat flag.txt  
-035db21c881520061c53e0536e44f815
+[035db21c881520061c53e0536e44f815]
 
 ### Key Takeaway
 Always test anonymous:anonymous or anonymous:(blank)
@@ -271,7 +271,7 @@ smb: \James.P\> exit
 ### Flag
 
 cat flag.txt
-5f61c10dffbc77a704d76016a22f1664
+[5f61c10dffbc77a704d76016a22f1664]
 
 ### Key Takeaway
 SMB shares should never allow anonymous/guest access.
@@ -347,7 +347,7 @@ xfreerdp /u:administrator /p: /v:10.129.21.150
 ### Flag
 once you gain rdp access the flag is on the desktop
 
-flag 951fa96d7830c451b536be5a6be008a0
+flag [951fa96d7830c451b536be5a6be008a0]
 
 ### Key Takeaway
 Default and blank credentials on RDP are extremely
