@@ -290,7 +290,6 @@ Time in Box: 12 minutes
 
 ### Enumeration
 nmap -sS -sV -Pn -p 1000-9999 -T5 10.129.21.145
-Starting Nmap 7.94SVN ( https://nmap.org ) at 2026-04-07 22:36 CDT
 Nmap scan report for 10.129.21.145
 
 Host is up (0.018s latency).
