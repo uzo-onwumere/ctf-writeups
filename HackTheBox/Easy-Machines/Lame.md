@@ -59,8 +59,7 @@ version of Samba that is running on this machine. We can find if there are explo
 
 <img width="1424" height="377" alt="Screenshot_20260810_181603" src="https://github.com/user-attachments/assets/642efc8a-2cc8-4446-a7fe-25eb629a8e1a" />
 
-And we get a few results. The most interesting being the 'Username' map script' command execution (Metasploit). What we can do now is search this map script in google and when we
-do that we see there is a vulnerability (CVE-2007-2447)on ports 139, and 445 attached that gives you a root shell. Armed with this information we can now open up msfconsole and see if we can create
+And we get a few results. The most interesting being the 'Username' map script' command execution (Metasploit). What we can do now is search this map script in google and when we do that we see there is a vulnerability (CVE-2007-2447) on ports 139, and 445 attached that gives you a root shell. Armed with this information we can now open up msfconsole and see if we can create
 a shell to gain root access to the machine. Once we get into msfconsole we can use the search command along with the version of samba we need to find an exploit.
 
 <img width="2374" height="630" alt="Screenshot_20260810_181906" src="https://github.com/user-attachments/assets/0fcf6311-6a3c-4f5f-ad4f-dfd377f803a5" />
