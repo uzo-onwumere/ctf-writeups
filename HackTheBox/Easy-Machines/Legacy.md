@@ -1,4 +1,4 @@
-# HTB: Easy Machine — Lame
+# HTB: Easy Machine — Legacy
 
 ![Platform](https://img.shields.io/badge/Platform-HackTheBox-9fef00?style=flat-square&labelColor=0d1117)
 ![Tier](https://img.shields.io/badge/Easy-Machines-lightgrey?style=flat-square&labelColor=0d1117)
