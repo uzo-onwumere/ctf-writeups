@@ -95,7 +95,7 @@ We have success! A meterpreter session is opened and a C:\WINDOWS\system32 promp
 
 
 
-After searching the directories I find the user flag on the user Hari's desktop.
+After searching the directories I find the user flag on the user Haris's desktop.
 
 
 
