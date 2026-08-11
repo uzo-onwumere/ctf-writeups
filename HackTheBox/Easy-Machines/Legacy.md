@@ -46,7 +46,7 @@ Armed with this information I was now able to fire up metasploit for the exploit
 
 <img width="2384" height="1060" alt="metasploit smb" src="https://github.com/user-attachments/assets/3170bf39-5004-4688-b35b-c12201ee4db9" />
 
-I run a search for CVE-2008-4250 which was found during the enumeration phase. After looking at the results I ran the command "use 0" to use the first
+I ran a search for CVE-2008-4250 which was found during the enumeration phase. After looking at the results I ran the command "use 0" to use the first
 exploit on the list.
 
 <img width="2373" height="1648" alt="show options metasploit" src="https://github.com/user-attachments/assets/ea2666b4-36fb-456c-b5d2-9e8f8be8c95a" />
