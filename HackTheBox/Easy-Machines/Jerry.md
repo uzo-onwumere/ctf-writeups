@@ -139,6 +139,7 @@ Both flags are revealed
 
 
 ### Key Takeaway
+
 Management interfaces with default creds are a full-compromise shortcut, not a foothold. The real lesson is the service context — 
 Tomcat (and many Windows services) frequently run as SYSTEM, so RCE on the app equals RCE as the highest-privilege account.
 ---
