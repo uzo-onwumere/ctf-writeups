@@ -19,11 +19,11 @@ Working on the easy tier of machines after finishing the starting point ones.
 
 ## Nibbles 
 
-Date: 2026-08-28
-Time in Box: 65 minutes
+Date: 2026-09-04
+Time in Box: 90 minutes
 
-**Service:** SMB (Port 139/445)
-**Concept:** Exploiting unpatched services with known CVEs 
+**Service:** Apache HTTP (Port 80)
+**Concept:** Two-stage chain based on misconfiguration and writeable files executed with elevated privileges. 
 
 ### Enumeration
 
