@@ -1,3 +1,4 @@
+<img width="1737" height="1113" alt="Screenshot 2026-09-04 085432" src="https://github.com/user-attachments/assets/6cfdf901-7da1-4989-bfc8-47a94264e87e" />
 
 # HTB: Easy Machine — Nibbles
 
