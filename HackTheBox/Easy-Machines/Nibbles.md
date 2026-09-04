@@ -60,7 +60,7 @@ With the notes found in the source page we get a look at the actual webpage that
 <img width="1262" height="1027" alt="Screenshot 2026-09-04 085957" src="https://github.com/user-attachments/assets/513b05e6-c2c2-48db-aa3d-4d1b5a65809e" />
 
 
-using the gobuster command with a wordlist we are able to enumerate quite a few more directories. The most interesting one being the admin.php directory and the admin directory. We will go through them and see what we can find.
+using the gobuster command with a wordlist we are able to enumerate quite a few more directories. The most interesting one being the admin.php, admin, and content directory. We will go through them and see what we can find.
 
 
 <img width="1747" height="690" alt="Screenshot 2026-09-04 091146" src="https://github.com/user-attachments/assets/e0462595-01ca-4939-b484-4913d8dd2120" />
