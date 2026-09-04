@@ -166,14 +166,27 @@ Running the ls -l command we can see we have read, write, and execute privileges
 
 
 
+<img width="1261" height="441" alt="Screenshot 2026-09-04 101514" src="https://github.com/user-attachments/assets/6e84d669-f10d-4e14-b2a1-46caff9855f7" />
 
 
+We open a new terminal and  set up a listener on port 1234. After that we echo a netcat reverse  shell script and write that into the monitor.sh file. Once that is complete we execute the file command and success! We get a shell on our second terminal. 
+
+
+<img width="1006" height="342" alt="Screenshot 2026-09-04 101651" src="https://github.com/user-attachments/assets/474bf162-675a-483c-b285-fa3a562772b0" />
+
+Just to make sure we have root access we  run the whoami command and it returns as root. Now we can start trying to find the root flag.
+
+
+<img width="1005" height="290" alt="Screenshot 2026-09-04 101823" src="https://github.com/user-attachments/assets/bbeee136-0974-43dc-9b6c-7b023490f5e3" />
+
+
+Navigating to the root directory we locate the root.txt file. Cat the file and we get the root flag.
 
 
 ### Flag
 **user flag 375376a3ac09793dddd235144b616852**
 
-**root flag 04a8b36e1545a455393d067e772fe90e**
+**root flag 781865fb16241899ae51437c82e7fc5b**
 
 
 
