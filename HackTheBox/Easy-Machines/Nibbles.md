@@ -1,4 +1,4 @@
-<img width="1737" height="1113" alt="Screenshot 2026-09-04 085432" src="https://github.com/user-attachments/assets/6cfdf901-7da1-4989-bfc8-47a94264e87e" />
+
 
 # HTB: Easy Machine — Nibbles
 
@@ -52,9 +52,21 @@ Viewing the source page however shows us a little more information that is inter
 
 
 
+<img width="1737" height="1113" alt="Screenshot 2026-09-04 085432" src="https://github.com/user-attachments/assets/6cfdf901-7da1-4989-bfc8-47a94264e87e" />
+
+With the notes found in the source page we get a look at the actual webpage that has a little bit more information we can work with. In the bottom right corner we see that the page is powered by nibbleblog and has three categories that have clickable links. These links don't lead to anything however. What we can do now though is further enumerate the site now that we have the /nibbleblog directory. 
+
+
+<img width="1262" height="1027" alt="Screenshot 2026-09-04 085957" src="https://github.com/user-attachments/assets/513b05e6-c2c2-48db-aa3d-4d1b5a65809e" />
+
+
+using the gobuster command with a wordlist we are able to enumerate quite a few more directories. The most interesting one being the admin.php directory and the admin directory. We will go through them and see what we can find.
 
 
 
+<img width="1746" height="780" alt="Screenshot 2026-09-04 090255" src="https://github.com/user-attachments/assets/c3895f48-b3fb-458b-98da-204418c5fce6" />
+
+starting with the content page we find quite a few subdirectories to look through for information.
 
 
 
