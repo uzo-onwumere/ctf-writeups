@@ -63,10 +63,40 @@ With the notes found in the source page we get a look at the actual webpage that
 using the gobuster command with a wordlist we are able to enumerate quite a few more directories. The most interesting one being the admin.php directory and the admin directory. We will go through them and see what we can find.
 
 
+<img width="1747" height="690" alt="Screenshot 2026-09-04 091146" src="https://github.com/user-attachments/assets/e0462595-01ca-4939-b484-4913d8dd2120" />
 
-<img width="1746" height="780" alt="Screenshot 2026-09-04 090255" src="https://github.com/user-attachments/assets/c3895f48-b3fb-458b-98da-204418c5fce6" />
 
-starting with the content page we find quite a few subdirectories to look through for information.
+
+Starting with the content page we find three subdirectories to look through for information. 
+
+
+<img width="1742" height="948" alt="Screenshot 2026-09-04 091245" src="https://github.com/user-attachments/assets/fa45a41e-5cf1-41c6-b8e9-d1d7290fe722" />
+
+
+<img width="1747" height="923" alt="Screenshot 2026-09-04 091307" src="https://github.com/user-attachments/assets/dd40d527-5c62-4568-b744-4b8dc9a37661" />
+
+
+Here we see a users.xml and in that file we find a username of admin. (Weak credential). This is something we should make a note of for later use. 
+
+
+
+
+
+<img width="1750" height="1302" alt="Screenshot 2026-09-04 091635" src="https://github.com/user-attachments/assets/2da19508-0f7d-4994-87ed-147a6c982b74" />
+
+
+
+
+Going through the rest of the files we do not find a password that pairs with the username but in the config file we see a lot of references to nibbles (the name of the room) Worth a shot as a potential password. Nothing else is standing out at the moment with the other subdirectories so lets head to the admin.php directory and see if we can get into it.
+
+
+
+
+<img width="1752" height="1272" alt="Screenshot 2026-09-04 091809" src="https://github.com/user-attachments/assets/72174cce-e269-4cd8-9a76-05befd8b0dcd" />
+
+
+Here we get to the login page and we attempt to enter the username - admin password - nibbles 
+
 
 
 
