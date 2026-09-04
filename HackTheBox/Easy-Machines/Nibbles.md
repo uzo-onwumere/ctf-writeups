@@ -1,3 +1,4 @@
+<img width="1271" height="700" alt="Screenshot 2026-09-04 084543" src="https://github.com/user-attachments/assets/8e868c57-ea44-4381-90de-c8d8a2095da5" />
 # HTB: Easy Machine — Nibbles
 
 ![Platform](https://img.shields.io/badge/Platform-HackTheBox-9fef00?style=flat-square&labelColor=0d1117)
