@@ -100,13 +100,78 @@ Here we get to the login page and we attempt to enter the username - admin passw
 
 
 
+
+<img width="1750" height="1233" alt="Screenshot 2026-09-04 091914" src="https://github.com/user-attachments/assets/5ce3287f-64b9-49e6-a870-6d536b60d402" />
+
+Success! We have guessed the password correctly and have access to the admin page. From here we can move around and see if there are any other vulnerabilities we may be able to use for our Exploitation phase.
+
+
+<img width="1750" height="1005" alt="Screenshot 2026-09-04 092106" src="https://github.com/user-attachments/assets/64230da4-d5b7-49b8-ba54-dd5f472adcd4" />
+
+
+Going through various tabs on the left hand side of the admin page we get to plugins and the my image file where we can upload files leading us to believe that file injection is another vulnerability we can exploit on this website. With all this found we can now start some exploitation attempts. 
+
+
+
 ### Exploitation
+
+
+<img width="1005" height="732" alt="Screenshot 2026-09-04 092527" src="https://github.com/user-attachments/assets/fe47bcac-a083-481d-8006-f1d5cf66d702" />
+
+We fire up msfconsole and search for nibbleblog and come up with a file upload exploit. This means out file injection hypothesis from the upload section on the website was correct. 
+
+
+<img width="1222" height="1055" alt="Screenshot 2026-09-04 092702" src="https://github.com/user-attachments/assets/4193e4a5-ab54-4974-9b49-37da566dd01e" />
+
+
+After utilizing the module we need to enter all of the information we have gathered along with setting our attacker host and targetURI.
+
+
+
+
+<img width="1227" height="1057" alt="Screenshot 2026-09-04 092915" src="https://github.com/user-attachments/assets/fdfdda35-1528-493b-9133-410f6daec806" />
+
+
+Now with everything added we can run the exploit.
+
+
+
+
+<img width="1230" height="461" alt="Screenshot 2026-09-04 093049" src="https://github.com/user-attachments/assets/1f7e86ff-b930-4916-8d91-bca06f34dc99" />
+
+Success! We now how a working meterpreter shell (disregard the pwd and whoami the shell was taking a long time to form so I was checking to see if it was working).
+
+
+
+<img width="1057" height="247" alt="Screenshot 2026-09-04 093345" src="https://github.com/user-attachments/assets/ea23f7e7-9154-4b57-bd9b-816d42ea518e" />
+
+After dropping into a shell we navigate to the usr directory and from there into the nibbler directory and locate the user.txt file. we cat the file and get the first user flag. 
+
+
+
+<img width="1227" height="283" alt="Screenshot 2026-09-04 093554" src="https://github.com/user-attachments/assets/0484b7e8-bfc9-455a-9385-5636dabac7c6" />
+
+
+In the same nibbler folder we find a personal.zip file and use the command unzip to gain access to the  contents which leads to the directory /personal/personalstuff/monitor.sh. We will move into that directory next.
+
+
+
+<img width="1227" height="320" alt="Screenshot 2026-09-04 093807" src="https://github.com/user-attachments/assets/3d1c1c0e-c16d-4049-bf11-e55021765866" />
+
+We run the sudo-l command and see that the monitor.sh file has root privileges and has NOPASSWD (no password). That means we can access a file that has root privileges without a password. Meaning if we can access it we can possibly gain root access over the machine through this file. 
+
+<img width="927" height="151" alt="Screenshot 2026-09-04 094116" src="https://github.com/user-attachments/assets/6b1ef19a-1d4b-44db-97bd-2b2f302a6098" />
+
+Running the ls -l command we can see we have read, write, and execute privileges on the monitor.sh file. What this means is that we can write to the file and write in a reverse shell to the file and have it execute and capture that response to a lister we set up on our machine. 
+
+
+
 
 
 
 
 ### Flag
-**user flag 7004dbcef0f854e0fb401875f26ebd00**
+**user flag 375376a3ac09793dddd235144b616852**
 
 **root flag 04a8b36e1545a455393d067e772fe90e**
 
