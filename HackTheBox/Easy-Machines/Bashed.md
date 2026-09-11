@@ -59,8 +59,19 @@ However the dev directory drops us right into two php web shells, the phpbash.ph
 
 
 
-
 Clicking on either drops us into a php webshell terminal that we can use to move around directories and try and locate a flag.
+
+
+<img width="1737" height="1258" alt="Screenshot 2026-09-11 004554" src="https://github.com/user-attachments/assets/9e2f0379-287b-4f94-b1f9-a939443f7a24" />
+
+
+
+Success! we locate the first flag in the home/arrexel directory
+
+<img width="1737" height="1292" alt="Screenshot 2026-09-11 004704" src="https://github.com/user-attachments/assets/98190302-de7d-48ce-b1cb-3405eb3e7c20" />
+
+After finding the flag I then run the sudo -l command which allows me to see what commands I can run with no password and it looks like the scriptmanager is able to do so. We need to find a way to laterally move to the scriptmanager to see what access they have.
+
 
 
 ### Exploitation
@@ -71,7 +82,7 @@ Clicking on either drops us into a php webshell terminal that we can use to move
 
 
 ### Flag
-**user flag 375376a3ac09793dddd235144b616852**
+**user flag a3c7d37662cb75b58fa7ae1220efe4f0**
 
 **root flag 781865fb16241899ae51437c82e7fc5b**
 
