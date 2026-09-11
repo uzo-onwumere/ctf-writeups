@@ -124,8 +124,18 @@ Now that I am scriptmanager I want to see what accesses they have. I run the ls 
 
 
 
+<img width="950" height="388" alt="Screenshot 2026-09-11 011021" src="https://github.com/user-attachments/assets/7be6d465-d666-45c4-99a2-7071c7c7242e" />
+
+
+
 Moving into that directory I am able to find to files a test.py and a test.txt. I cat both files and see that the test.py has instructions of open the test.txt write testing 123 and close. Running cat on the test.txt shows the testing 123 that was found in the test.py. This tells me that if I write something to the test.py file the test.txt will run it. Since I can write to test.py I can create a shell that can give hopefully give me root access.
 
+
+
+
+
+
+It then dawned on me that the same python script I used to gain a reverse shell the first time can be used again and written to the test.py file to gain root access. I take the same script from early (modifying it to reflect a new listening port) and run an echo command to write the file to the test.py file. 
 
 
 
