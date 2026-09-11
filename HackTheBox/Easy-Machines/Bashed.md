@@ -49,5 +49,5 @@ Time in Box: 90 minutes
 
 
 ### Key Takeaway
-Writeable files executed with elevated privileges means you instantly have a method for root access.
+Don't ship debug/dev tooling to reachable directories.
 ---
