@@ -98,6 +98,34 @@ I edit the script in a texts editor to reflect my attacker IP and port and then 
 
 
 
+<img width="1011" height="732" alt="Screenshot 2026-09-11 005853" src="https://github.com/user-attachments/assets/16c73718-960c-4d4b-a50e-b086c9879598" />
+
+
+
+I then enter the command into the php webshell terminal and we are in! The Listener responds with a /bin/bash shell.
+
+
+<img width="991" height="277" alt="Screenshot 2026-09-11 010248" src="https://github.com/user-attachments/assets/0aaabaab-6124-4b3b-8282-33f6a4d854a5" />
+
+
+
+
+From here I now run the command sudo -l again to get the same response as before. I then run the sudo -u scriptmanager /bin/bash -i to to switch into the scriptmanager user and spawn a bash shell. This provides me with a full interactive shell and successfully indicates lateral movement. For good measure I run the whoami command and id command just to make sure I am infact scriptmanager. 
+
+
+
+
+<img width="1197" height="932" alt="Screenshot 2026-09-11 010430" src="https://github.com/user-attachments/assets/aec9794a-a514-4d11-bf7b-bf1930db5571" />
+
+
+
+Now that I am scriptmanager I want to see what accesses they have. I run the ls -l command to see the read, write, and execute privileges are available. Everything is root besides the scripts directory which only the scriptmanager has access too. I decide to see what I can find in that directory.
+
+
+
+
+Moving into that directory I am able to find to files a test.py and a test.txt. I cat both files and see that the test.py has instructions of open the test.txt write testing 123 and close. Running cat on the test.txt shows the testing 123 that was found in the test.py. This tells me that if I write something to the test.py file the test.txt will run it. Since I can write to test.py I can create a shell that can give hopefully give me root access.
+
 
 
 
