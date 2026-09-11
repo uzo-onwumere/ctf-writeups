@@ -74,7 +74,34 @@ After finding the flag I then run the sudo -l command which allows me to see wha
 
 
 
+
 ### Exploitation
+
+
+Now we enter the exploitation phase. We know that we have a php webshell and know that the scriptmanager will allow us to run commands with no password. What I decide to do is find a python script exploit that can set up a reverse shell so I can move around as the scriptmanager instead of www-data.
+
+
+
+
+
+<img width="1751" height="1307" alt="Screenshot 2026-09-11 005329" src="https://github.com/user-attachments/assets/7f326000-d642-4941-b181-19af05776be7" />
+
+After doing some quick research on google we find a python reverse shell script that looks promising. 
+
+
+
+<img width="1710" height="1157" alt="Screenshot 2026-09-11 005629" src="https://github.com/user-attachments/assets/d469b1f5-fa96-439a-a2f2-707d3063d4f6" />
+
+
+
+I edit the script in a texts editor to reflect my attacker IP and port and then set up a listener in another terminal.
+
+
+
+
+
+
+
 
 
 
