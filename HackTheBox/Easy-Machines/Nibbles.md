@@ -141,10 +141,6 @@ Now with everything added we can run the exploit.
 
 Success! We now how a working meterpreter shell (disregard the pwd and whoami the shell was taking a long time to form so I was checking to see if it was working).
 
-
-
-<img width="1057" height="247" alt="Screenshot 2026-09-04 093345" src="https://github.com/user-attachments/assets/ea23f7e7-9154-4b57-bd9b-816d42ea518e" />
-
 After dropping into a shell we navigate to the usr directory and from there into the nibbler directory and locate the user.txt file. we cat the file and get the first user flag. 
 
 
@@ -175,10 +171,6 @@ We open a new terminal and  set up a listener on port 1234. After that we echo a
 <img width="1006" height="342" alt="Screenshot 2026-09-04 101651" src="https://github.com/user-attachments/assets/474bf162-675a-483c-b285-fa3a562772b0" />
 
 Just to make sure we have root access we  run the whoami command and it returns as root. Now we can start trying to find the root flag.
-
-
-<img width="1005" height="290" alt="Screenshot 2026-09-04 101823" src="https://github.com/user-attachments/assets/bbeee136-0974-43dc-9b6c-7b023490f5e3" />
-
 
 Navigating to the root directory we locate the root.txt file. Cat the file and we get the root flag.
 
