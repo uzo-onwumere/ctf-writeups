@@ -12,7 +12,7 @@ Working on the easy tier of machines after finishing the starting point ones.
 
 | Machine | Service | Concept | Flag |
 |:---|:---|:---|:---:|
-| Sense | Apache httpd | Sudo misconfig -> writable cron script | ✅ |
+| Sense | pfsense | enumeration to a specific version then working a known CVE | ✅ |
 
 
 ---
@@ -93,22 +93,33 @@ Now we can start trying to exploit the machine.
 
 
 
-Now that we have the metasploit exploit we just have to input the username, password, Rhost, and Lhost and success! We establish a meterpreter shell
-on the machine.
+Now that we have the metasploit exploit we just have to input the username, password, Rhost, and Lhost and success! We establish a meterpreter shell on the machine.
+
+
+<img width="1522" height="1071" alt="Screenshot 2026-09-12 232823" src="https://github.com/user-attachments/assets/80bce5b0-a642-4c79-aa71-13fb0b1f0ce4" />
+
+
+We find the first flag by navigating into the home directory and using the cat command on the user.txt file.
 
 
 
+<img width="1520" height="1067" alt="Screenshot 2026-09-12 233156" src="https://github.com/user-attachments/assets/b6ac86d0-394b-44f8-839a-33731f279b36" />
+
+
+
+
+We find the root flag by navigating into the root directory and using the cat command on the root.txt file.
 
 
 ### Flag
-**user flag a3c7d37662cb75b58fa7ae1220efe4f0**
+**user flag 8721327cc232073b40d27d9c17e7348b**
 
-**root flag 9781a0edf1c5ee3cd146448c8e11b725**
+**root flag d08c32a5d4f8c8b10e76eb51a69f1a86**
 
 
 
 
 
 ### Key Takeaway
-Don't ship debug/dev tooling to reachable directories.
+Strong enumeration and finding services that run as root lead to RCE that is instantly root.
 ---
