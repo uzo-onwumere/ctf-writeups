@@ -60,9 +60,9 @@ We have success! A meterpreter session is opened and a C:\WINDOWS\system32 promp
 
 
 ### Flag
-**user flag e69af0e4f443de7e36876fda4ec7644f**
+**user flag ✅**
 
-**root flag 993442d258b0e0ec917cae9e695d5713**
+**root flag ✅**
 
 <img width="1550" height="1020" alt="user  flag" src="https://github.com/user-attachments/assets/f3fc6f5e-0132-4fb4-b74a-273731d481a7" />
 
