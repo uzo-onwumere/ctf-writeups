@@ -64,14 +64,8 @@ We have success! A meterpreter session is opened and a C:\WINDOWS\system32 promp
 
 **root flag ✅**
 
-<img width="1550" height="1020" alt="user  flag" src="https://github.com/user-attachments/assets/f3fc6f5e-0132-4fb4-b74a-273731d481a7" />
 
-After searching the directories I find the user flag on the user John's desktop.
-
-
-<img width="1745" height="1858" alt="root flag" src="https://github.com/user-attachments/assets/5bd3c291-d752-493e-8a3a-b6d3527d5374" />
-
-After a little more searching in the directories the root flag was found in the Admin directory on the desktop.
+After searching the directories I find the user flag on the user John's desktop and after a little more searching in the directories the root flag was found in the Admin directory on the desktop.
 
 
 
