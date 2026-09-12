@@ -60,9 +60,9 @@ We have success! A meterpreter session is opened and a C:\WINDOWS\system32 promp
 
 
 ### Flag
-**user flag ✅**
+**user flag obtained✅**
 
-**root flag ✅**
+**root flag obtained ✅**
 
 
 After searching the directories I find the user flag on the user John's desktop and after a little more searching in the directories the root flag was found in the Admin directory on the desktop.
