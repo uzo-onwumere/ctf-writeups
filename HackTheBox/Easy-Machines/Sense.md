@@ -58,15 +58,15 @@ I then went through a few more directories that yielded no useful results until 
 This file provided me with a username and password for the login page. 
 
 
-
+I tried the "company defaults" as the password but after a few failures I realized that
+company defaults meant the default name of the company which is pfsense. I tried to enter that  and it still didn't work. I then tried lower case for
+everything and was able to login. username and password ended up being rohit-pfsense.
 
 
 
 <img width="1751" height="1308" alt="Screenshot 2026-09-12 231139" src="https://github.com/user-attachments/assets/0eaaff5c-83ac-4df7-bbff-57026da6f188" />
 
-I tried the "company defaults" as the password but after a few failures I realized that
-company defaults meant the default name of the company which is pfsense. I tried to enter that  and it still didn't work. I then tried lower case for
-everything and was able to login. username and password ended up being rohit-pfsense.
+
 
 
 Now that we are in we can see a version for pfsense and information ranging from DNS servers, CPU usage and a whole host of other information. It is at this point
