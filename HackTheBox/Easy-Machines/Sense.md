@@ -19,11 +19,11 @@ Working on the easy tier of machines after finishing the starting point ones.
 
 ## Sense 
 
-Date: 2026-09-10
-Time in Box: 90 minutes
+Date: 2026-09-12
+Time in Box: 50 minutes
 
-**Service:** Apache HTTP (Port 80)
-**Concept:** The chain is a classic "left-behind dev tool → sudo misconfig → writable cron script" progression: 
+**Service:** pfsense (Port 80)
+**Concept:** enumeration of a specific service then working a known CVE to exploit said service. 
 
 ### Enumeration
 
