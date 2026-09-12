@@ -83,19 +83,13 @@ As you can see we have successfully connected to the target machine with a root 
 
 
 ### Flag
-**user flag 7b26805abd5aae443765cde3a99ab5be**
+**user flag obtained ✅**
 
-**root flag 7677e8e0580504b4c2a0c627b325a83c**
-
-<img width="2374" height="743" alt="Screenshot_20260810_182722" src="https://github.com/user-attachments/assets/794ef371-8f48-47ba-a675-8845cbb3c8e4" />
-
-by moving into the user directory and into the user we are able to find the user.txt, cat the file and locate the flag. Next we move onto the root user flag.
+**root flag obtained ✅**
 
 
 
-<img width="1446" height="1580" alt="Screenshot_20260810_183506" src="https://github.com/user-attachments/assets/2d6d29ac-dc6b-422d-80fe-6ba1e4f7a064" />
-
-and here we are, by moving into the root directory we find the root.txt and with the cat command we capture the root flag and own the machine.
+By moving into the user directory and into the user we are able to find the user.txt, cat the file and locate the flag. Next we move onto the root user flag. By moving into the root directory we find the root.txt and with the cat command we capture the root flag and own the machine.
 
 
 ### Key Takeaway
