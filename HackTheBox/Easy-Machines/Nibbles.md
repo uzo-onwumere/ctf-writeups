@@ -184,9 +184,9 @@ Navigating to the root directory we locate the root.txt file. Cat the file and w
 
 
 ### Flag
-**user flag 375376a3ac09793dddd235144b616852**
+**user flag obtained ✅**
 
-**root flag 781865fb16241899ae51437c82e7fc5b**
+**root flag obtained ✅**
 
 
 
