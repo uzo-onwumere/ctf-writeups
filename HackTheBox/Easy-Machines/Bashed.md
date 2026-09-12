@@ -132,14 +132,10 @@ Moving into that directory I am able to find to files a test.py and a test.txt. 
 
 
 
-<img width="1005" height="461" alt="Screenshot 2026-09-11 014340" src="https://github.com/user-attachments/assets/c88bde7a-86f6-47fb-8d4a-5b5e704a1071" />
-
 
 
 Going back out to google to do some research I find a script for a python reverse shell. I take the script and edit it using the echo command so I can write it to the test.py file that lives in the scripts/test.py directory and after about a minute we get the reverse shell!
 
-
-<img width="682" height="367" alt="Screenshot 2026-09-11 014557" src="https://github.com/user-attachments/assets/c9f98436-d7bc-40e5-9740-57bddf352fb2" />
 
 
 
@@ -151,9 +147,9 @@ I then run the whoami command and id command for good measure and we are indeed 
 
 
 ### Flag
-**user flag a3c7d37662cb75b58fa7ae1220efe4f0**
+**user flag obtained ✅**
 
-**root flag 9781a0edf1c5ee3cd146448c8e11b725**
+**root flag obtained ✅**
 
 
 
