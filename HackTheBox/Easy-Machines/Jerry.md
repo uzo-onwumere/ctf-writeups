@@ -120,16 +120,9 @@ Shell is successful and just for good measure I run a whoami command and see tha
 
 
 ### Flag
-**user flag 7004dbcef0f854e0fb401875f26ebd00**
+**user flag obtained ✅**
 
-**root flag 04a8b36e1545a455393d067e772fe90e**
-
-
-
-
-<img width="2407" height="1558" alt="Screenshot 2026-08-28 211751" src="https://github.com/user-attachments/assets/414550b0-0bd5-4e74-b6d4-bb230c01f765" />
-
-
+**root flag obtained ✅**
 
 
 From the shell we just move through directories until we land on the desktop for the admin and find the flag directory. From here we see a file titled "2 for the price of 1.txt" we use the type command to read the contents and success!
