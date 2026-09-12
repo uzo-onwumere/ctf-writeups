@@ -81,33 +81,12 @@ We have success! A meterpreter session is opened and a C:\WINDOWS\system32 promp
 
 
 ### Flag
-**user flag e00f3b24a379139c65594d4500c5d028**
+**user flag obtained ✅**
 
-**root flag b888f15a2d3e60c104a1f49b3f719e76**
-
-
-<img width="2522" height="1590" alt="user flag 1" src="https://github.com/user-attachments/assets/4b235b6c-5304-40aa-97e4-4847b2e12e8a" />
+**root flag obtained ✅**
 
 
-
-
-<img width="2522" height="250" alt="user flag 2" src="https://github.com/user-attachments/assets/35343781-bf1c-4484-8d1c-3c7f1c3dcfa6" />
-
-
-
-After searching the directories I find the user flag on the user Haris's desktop.
-
-
-
-<img width="2522" height="1495" alt="root flag" src="https://github.com/user-attachments/assets/995883ff-ad01-4844-bbbb-bc5077e392e2" />
-
-
-
-<img width="2522" height="245" alt="root flag 2" src="https://github.com/user-attachments/assets/bdeeb649-1c3f-4173-b17a-6e0da9eee0b9" />
-
-
-
-After a little more searching in the directories the root flag was found in the Admin directory on the desktop.
+After searching the directories I find the user flag on the user Haris's desktop and after a little more searching in the directories the root flag was found in the Admin directory on the desktop.
 
 
 
