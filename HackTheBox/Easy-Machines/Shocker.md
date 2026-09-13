@@ -20,7 +20,7 @@ Working on the easy tier of machines after finishing the starting point ones.
 ## Bashed 
 
 Date: 2026-09-12
-Time in Box:  minutes
+Time in Box: 40 minutes
 
 **Service:** Apache HTTP (Port 80)
 **Concept:** The chain is a classic "left-behind dev tool → sudo misconfig → writable cron script" progression: 
