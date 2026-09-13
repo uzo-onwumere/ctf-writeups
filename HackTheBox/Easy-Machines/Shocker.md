@@ -12,7 +12,7 @@ Working on the easy tier of machines after finishing the starting point ones.
 
 | Machine | Service | Concept | Flag |
 |:---|:---|:---|:---:|
-| Shocker | Apache httpd | Sudo misconfig -> writable cron script | ✅ |
+| Shocker | Apache httpd | Shellshock RCE via a CGI script for the foothold; a sudo-runnable perl binary for a direct one-hop privesc to root. | ✅ |
 
 
 ---
@@ -98,5 +98,5 @@ into the root directory and cat the root flag.
 
 
 ### Key Takeaway
-Don't ship debug/dev tooling to reachable directories.
+A sudo-runnable binary is a direct path to root — perl invoked as root can exec a root shell (GTFOBins)
 ---
