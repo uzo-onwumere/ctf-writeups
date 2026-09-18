@@ -86,12 +86,6 @@ I drop into the shell and run a whoami command and I get nt authority\system aka
 
 
 
-### Flag
-**user flag obtained ✅**
-
-**root flag obtained ✅**
-
-
 From here I navigate to the user desktop to snag the user flag.
 
 
@@ -103,6 +97,16 @@ From here I navigate to the user desktop to snag the user flag.
 From there I use the same process to snag the root flag
 
 <img width="754" height="399" alt="root flag" src="https://github.com/user-attachments/assets/6f970de0-1158-4584-96db-7b745b30543a" />
+
+
+
+
+### Flag
+**user flag obtained ✅**
+
+**root flag obtained ✅**
+
+
 
 
 
