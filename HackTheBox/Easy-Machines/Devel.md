@@ -70,16 +70,19 @@ I use the search suggester command in metasploit and enter my session. From here
 
 
 
-<img width="1555" height="767" alt="exploit meterpreter shell" src="https://github.com/user-attachments/assets/820895c5-0f1d-492d-8909-89ba485f18fe" />
-
-
-
-
 
 ### Exploitation
 
 
 
+<img width="1553" height="766" alt="exploit results" src="https://github.com/user-attachments/assets/64f10f28-7069-4d93-a62d-60a04ec7a1e2" />
+
+We get a pretty decent sized list of exploits that could work on the machine. I pick the schlamperei one and start the exploit and we get the shell.
+
+
+
+
+I drop into the shell and run a whoami command and I get nt authority\system aka root.
 
 
 
@@ -87,6 +90,22 @@ I use the search suggester command in metasploit and enter my session. From here
 **user flag obtained ✅**
 
 **root flag obtained ✅**
+
+
+From here I navigate to the user desktop to snag the user flag.
+
+
+<img width="611" height="327" alt="user flag" src="https://github.com/user-attachments/assets/1befd0ae-b0cb-41ce-8d74-48a2f5d27bc5" />
+
+
+
+
+From there I use the same process to snag the root flag
+
+<img width="754" height="399" alt="root flag" src="https://github.com/user-attachments/assets/6f970de0-1158-4584-96db-7b745b30543a" />
+
+
+
 
 
 
