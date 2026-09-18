@@ -82,6 +82,9 @@ We get a pretty decent sized list of exploits that could work on the machine. I 
 
 
 
+<img width="937" height="242" alt="root shell" src="https://github.com/user-attachments/assets/03e41871-f2b7-47e4-9196-0e58a6ee9bc0" />
+
+
 I drop into the shell and run a whoami command and I get nt authority\system aka root.
 
 
