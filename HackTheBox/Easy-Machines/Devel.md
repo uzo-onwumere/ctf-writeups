@@ -12,7 +12,7 @@ Working on the easy tier of machines after finishing the starting point ones.
 
 | Machine | Service | Concept | Flag |
 |:---|:---|:---|:---:|
-| Devel | FTP Anonymous | Sudo misconfig -> writable cron script | ✅ |
+| Devel | FTP Anonymous | FTP Misconfiguration | ✅ |
 
 
 ---
@@ -23,7 +23,7 @@ Date: 2026-09-13
 Time in Box: 90 minutes
 
 **Service:** FTP Anonymous (Port 21)
-**Concept:** Manual windows kernel privesc — foothold gives a low-priv IIS account, systeminfo identifies an unpatched kernel, transfer-and-run the matching exploit to reach SYSTEM 
+**Concept:** Anonymous FTP misconfiguration can lead to web shell execution via file uploads.
 
 ### Enumeration
 
@@ -119,5 +119,5 @@ From there I use the same process to snag the root flag
 
 
 ### Key Takeaway
-An unpatched Windows box lets you escalate from a low-privilege service account to SYSTEM by identifying the missing kernel patch from systeminfo and running the matching kernel exploit — the whole privesc is enumerate-the-patch-level, then transfer-and-run.
+Enforce Proper Service Isolation: Never map an anonymous upload directory directly into a web server's execution path. If users must upload files, they should be stored completely outside the web root, and file execution permissions must be explicitly disabled.
 ---
